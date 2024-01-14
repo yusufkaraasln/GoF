@@ -3,12 +3,7 @@ package org.gof.design.patterns.creational.factoryMethod.solution.sol1;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Class that represents Human Resources in a company.
- * 
- * @author akin
- *
- */
+
 public class HR {
 
 	private List<Employee> employees = new ArrayList<Employee>();
