@@ -7,7 +7,7 @@ import java.util.List;
 public class Book {
 	private String bookName;
 	private List<Page> pages;
-	private static java.lang.Character endOfPage = new java.lang.Character(12);
+	private static Character endOfPage = new Character(12);
 
 	public Book(String bookName, int numberOfPages) {
 		this.bookName = bookName;
