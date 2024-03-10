@@ -3,11 +3,11 @@ package org.gof.design.patterns.structural.flyweight.book;
 import java.util.*;
 
 public class BookFactory implements Factory {
-	private List<java.lang.Character> as = new ArrayList<>();
+	private List<Character> as = new ArrayList<>();
 
 	@Override
-	public java.lang.Character createCharacter(char c, boolean upperCase) {
-		return new java.lang.Character(c, upperCase);
+	public Character createCharacter(char c, boolean upperCase) {
+		return new Character(c, upperCase);
 	}
 
 	@Override

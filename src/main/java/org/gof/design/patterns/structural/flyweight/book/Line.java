@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Line {
-	private List<java.lang.Character> chars;
-	private static java.lang.Character endOfLine = new java.lang.Character('\n');
+	private List<Character> chars;
+	private static Character endOfLine = new Character('\n');
 	private int emptyPosition;
 	private boolean full;
 	private int numberOfCharacters = 1;
@@ -15,7 +15,7 @@ public class Line {
 		chars = new ArrayList<>(numberOfCharacters);
 	}
 
-	public boolean add(java.lang.Character character) {
+	public boolean add(Character character) {
 		if (!full) {
 			chars.add(character);
 			character.setLine(this);
@@ -32,13 +32,13 @@ public class Line {
 		chars.add(endOfLine);
 	}
 
-	public List<java.lang.Character> getChars() {
+	public List<Character> getChars() {
 		return chars;
 	}
 
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
-		for (java.lang.Character character : chars)
+		for (Character character : chars)
 			sb.append(character.getValue());
 		return sb.toString();
 	}
