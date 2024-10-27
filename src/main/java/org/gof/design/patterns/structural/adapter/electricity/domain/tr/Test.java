@@ -10,7 +10,7 @@ public class Test {
 		turkishMixer.start();
 		turkishMixer.stop();
 		
-		System.out.println();
+		System.out.println("*********");
 		
 		Appliance turkishBroom = new TurkishHomeAppliance("Broom");
 		turkishBroom.setPowerSource(turkishPowerSource);
